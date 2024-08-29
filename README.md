@@ -1,9 +1,9 @@
 <!-- ### Hi there 👋 -->
 
-[![](https://raw.githubusercontent.com/sourabhkolekar/hello/main/chat.svg)](https://linkedin.com/in/sourabhkolekar/)
+[![](https://raw.githubusercontent.com/sourabhkolekar/sourabhkolekar/main/chat.svg)](https://linkedin.com/in/sourabhkolekar/)
 
 <!--
-**sourabhkolekar/hello** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**sourabhkolekar/sourabhkolekar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
