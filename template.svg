@@ -303,7 +303,7 @@
     <text x="15" y="27">I’m a polyglot engineer and avid gamer.</text>
     <text x="15" y="50">I’ve been at 
       <a xlink:href="https://bilue.com.au/">Bilue</a>
-      for about {psTime} now.</text>
+      for about {psTime}.</text>
   </g>
 
   <!-- typing 4 -->
