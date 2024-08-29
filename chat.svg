@@ -248,7 +248,7 @@
 
   </g>
 
-  <!-- Hi, I'm Sourabh -->
+  <!-- Hi, I'm sourabh -->
   <g transform="translate(10, 0)" class="msg-1 bubble">
     <rect width="180" height="42" rx="18.0355" />
     <text x="15" y="27">Hi, I'm Sourabh 👋</text>
@@ -276,7 +276,7 @@
   <g transform="translate(10, 48)" class="msg-2">
     <rect width="439" height="66.1302" rx="18.0355" class="bubble" />
     <text x="15" y="27">I live in Melbourne where it’s supposed to be</text>
-    <text x="15" y="50">74° F (23° C) and <tspan class="emoji">☀️</tspan> today.</text>
+    <text x="15" y="50">63° F (17° C) and <tspan class="emoji">🌤</tspan> today.</text>
   </g>
 
   <!-- typing 3 -->
@@ -303,7 +303,7 @@
     <text x="15" y="27">I’m a polyglot engineer and avid gamer.</text>
     <text x="15" y="50">I’ve been at 
       <a xlink:href="https://bilue.com.au/">Bilue</a>
-      for about about 4 years.</text>
+      for about almost 4 years.</text>
   </g>
 
   <!-- typing 4 -->
