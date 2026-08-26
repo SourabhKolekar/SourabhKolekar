@@ -8,16 +8,6 @@ const MELBOURNE = {
   longitude: 144.9631,
 }
 
-const dayBubbleWidths = {
-  Monday: 235,
-  Tuesday: 235,
-  Wednesday: 260,
-  Thursday: 245,
-  Friday: 220,
-  Saturday: 245,
-  Sunday: 230,
-}
-
 function getWeatherEmoji(conditionId) {
   if (conditionId >= 200 && conditionId < 300) return '⛈'
   if (conditionId >= 300 && conditionId < 400) return '🌦'
@@ -75,10 +65,8 @@ async function generateProfileSvg() {
     todayForecasts.length > 0 ? todayForecasts : [body.list[0]]
 
   const warmestForecast = relevantForecasts.reduce((warmest, forecast) => {
-    const warmestTemperature =
-      warmest.main.temp_max ?? warmest.main.temp
-    const forecastTemperature =
-      forecast.main.temp_max ?? forecast.main.temp
+    const warmestTemperature = warmest.main.temp_max ?? warmest.main.temp
+    const forecastTemperature = forecast.main.temp_max ?? forecast.main.temp
 
     return forecastTemperature > warmestTemperature ? forecast : warmest
   })
@@ -86,7 +74,6 @@ async function generateProfileSvg() {
   const degC = Math.round(
     Number(warmestForecast.main.temp_max ?? warmestForecast.main.temp)
   )
-  const degF = Math.round((degC * 9) / 5 + 32)
   const conditionId = Number(warmestForecast.weather?.[0]?.id)
   const weatherEmoji = getWeatherEmoji(conditionId)
   const todayDay = new Intl.DateTimeFormat('en-US', {
@@ -96,11 +83,9 @@ async function generateProfileSvg() {
 
   let data = await fs.readFile('template.svg', 'utf-8')
   const replacements = {
-    '{degF}': degF,
     '{degC}': degC,
     '{weatherEmoji}': weatherEmoji,
     '{todayDay}': todayDay,
-    '{dayBubbleWidth}': dayBubbleWidths[todayDay],
   }
 
   for (const [placeholder, value] of Object.entries(replacements)) {
@@ -112,7 +97,7 @@ async function generateProfileSvg() {
 
   await fs.writeFile('chat.svg', data)
   console.log(
-    `Generated chat.svg for ${todayDay}: ${degC}° C / ${degF}° F ${weatherEmoji}`
+    `Generated chat.svg for ${todayDay}: ${degC}°C ${weatherEmoji}`
   )
 }
 

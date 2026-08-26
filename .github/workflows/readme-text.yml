@@ -1,6 +1,13 @@
 name: Readme Text
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - build-svg.js
+      - template.svg
+      - .github/workflows/readme-text.yml
   schedule:
     - cron: "0 2 * * *"
   workflow_dispatch:
