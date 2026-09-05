@@ -149,7 +149,7 @@
   <text x="86" y="35" class="name">Sourabh Kolekar</text>
   <text x="86" y="57" class="subtitle">Backend Engineer · Cloud &amp; Event-Driven Systems · Melbourne</text>
   <circle cx="500" cy="29" r="4.5" class="online" />
-  <text x="510" y="33" class="status">online · Friday · 15°C <tspan class="emoji">☁️</tspan></text>
+  <text x="510" y="33" class="status">online · Saturday · 17°C <tspan class="emoji">🌧</tspan></text>
 
   <g class="typing typing-1" transform="translate(30 123)">
     <rect width="66" height="40" rx="20" />
